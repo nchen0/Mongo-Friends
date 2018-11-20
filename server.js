@@ -7,7 +7,7 @@ const server = express();
 const friendRoute = require("./friends/friendRoute");
 
 mongoose
-  .connect("mongodb://localhost/beardb")
+  .connect("mongodb://localhost/friendDB")
   .then(mongo => {
     console.log("connected to database");
   })
